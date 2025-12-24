@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韩国大学推荐结果</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 data-translate="headerTitle">韩国大学推荐结果</h1>
+                <button id="languageToggle" class="language-toggle" data-translate-title="languageToggleTitle" title="切换韩语">
+                    KR
+                </button>
+            </div>
+            
+            <!-- 主题切换按钮 -->
+            <div class="theme-toggle">
+                <button class="theme-btn theme-red" data-theme="red" title="红色主题"></button>
+                <button class="theme-btn theme-orange" data-theme="orange" title="橙色主题"></button>
+                <button class="theme-btn theme-yellow" data-theme="yellow" title="黄色主题"></button>
+                <button class="theme-btn theme-green" data-theme="green" title="绿色主题"></button>
+                <button class="theme-btn theme-blue active" data-theme="blue" title="蓝色主题"></button>
+                <button class="theme-btn theme-purple" data-theme="purple" title="紫色主题"></button>
+            </div>
+            <p data-translate="headerSubtitle">根据您提供的成绩，为您推荐以下韩国大学</p>
+        </header>
+
+        <main>
+            <div class="action-buttons">
+                <button id="backBtn" class="back-button" data-translate="backBtn">返回重新输入</button>
+            </div>
+
+            <section class="result-section">
+                <h2 data-translate="resultSectionTitle">推荐大学清单</h2>
+                <div id="recommendationResults"></div>
+                <div id="noResults" style="display: none;">
+                    <p data-translate="noResults">没有找到匹配的大学，请尝试调整您的成绩范围。</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p data-translate="copyright">© 2024 韩国大学推荐系统 | 数据仅供参考，请以各大学官方要求为准</p>
+        </footer>
+    </div>
+
+    <script src="js/lang.js"></script>
+    <script src="js/recommend.js"></script>
+    <script src="js/result.js"></script>
+</body>
+</html>

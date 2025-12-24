@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学校介绍</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .school-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .school-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .school-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .school-english-name {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .school-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .school-info-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .school-info-section h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        
+        .school-contact {
+            margin-bottom: 20px;
+        }
+        
+        .school-contact p {
+            margin: 8px 0;
+        }
+        
+        .school-contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .school-contact a:hover {
+            text-decoration: underline;
+        }
+        
+        .school-details {
+            margin-bottom: 20px;
+        }
+        
+        .school-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .school-details th, .school-details td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .school-details th {
+            background-color: #e9ecef;
+            font-weight: bold;
+        }
+        
+        .school-description {
+            line-height: 1.6;
+        }
+        
+        .action-buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .back-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container school-container">
+        <header>
+            <div class="header-content">
+                <h1 data-translate="schoolPageTitle">学校介绍</h1>
+                <button id="languageToggle" class="language-toggle" data-translate-title="languageToggleTitle" title="切换韩语">
+                    KR
+                </button>
+            </div>
+            
+            <!-- 主题切换按钮 -->
+            <div class="theme-toggle">
+                <button class="theme-btn theme-red" data-theme="red" title="红色主题"></button>
+                <button class="theme-btn theme-orange" data-theme="orange" title="橙色主题"></button>
+                <button class="theme-btn theme-yellow" data-theme="yellow" title="黄色主题"></button>
+                <button class="theme-btn theme-green" data-theme="green" title="绿色主题"></button>
+                <button class="theme-btn theme-blue active" data-theme="blue" title="蓝色主题"></button>
+                <button class="theme-btn theme-purple" data-theme="purple" title="紫色主题"></button>
+            </div>
+        </header>
+
+        <main>
+            <div id="schoolContent">
+                <!-- 学校信息将在这里动态加载 -->
+                <div style="text-align: center; padding: 50px;">
+                    <p>加载中...</p>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="backBtn" class="back-button" data-translate="backToResults">返回推荐结果</button>
+            </div>
+        </main>
+
+        <footer>
+            <p data-translate="copyright">© 2024 韩国大学推荐系统 | 数据仅供参考，请以各大学官方要求为准</p>
+        </footer>
+    </div>
+
+    <script src="js/lang.js"></script>
+    <script src="js/recommend.js"></script>
+    <script src="js/school.js"></script>
+</body>
+</html>

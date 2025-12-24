@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韩国大学推荐系统</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 data-translate="headerTitle">韩国大学推荐系统</h1>
+                <button id="languageToggle" class="language-toggle" data-translate-title="languageToggleTitle" title="切换韩语">
+                    KR
+                </button>
+            </div>
+            
+            <!-- 主题切换按钮 -->
+            <div class="theme-toggle">
+                <button class="theme-btn theme-red" data-theme="red" title="红色主题"></button>
+                <button class="theme-btn theme-orange" data-theme="orange" title="橙色主题"></button>
+                <button class="theme-btn theme-yellow" data-theme="yellow" title="黄色主题"></button>
+                <button class="theme-btn theme-green" data-theme="green" title="绿色主题"></button>
+                <button class="theme-btn theme-blue active" data-theme="blue" title="蓝色主题"></button>
+                <button class="theme-btn theme-purple" data-theme="purple" title="紫色主题"></button>
+            </div>
+            <p data-translate="headerSubtitle">根据您的韩语成绩、英语成绩和高中平均成绩，为您推荐最适合的韩国大学</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2 data-translate="inputSectionTitle">请输入您的成绩信息</h2>
+                <form id="scoreForm">
+                    <div class="form-group">
+                        <label for="topik" data-translate="topikLabel">韩语成绩（TOPIK等级）：</label>
+                        <input type="number" id="topik" name="topik" min="0" max="6" required value="3">
+                        <small data-translate="topikHint">TOPIK等级范围：0-6级（0表示没有成绩）</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="toefl" data-translate="toeflLabel">英语成绩（TOEFL分数）：</label>
+                        <input type="number" id="toefl" name="toefl" min="0" max="120" required value="0">
+                        <small data-translate="toeflHint">TOEFL分数范围：0-120分</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gpa" data-translate="gpaLabel">高中平均成绩（GPA）：</label>
+                        <input type="number" id="gpa" name="gpa" min="0" max="4" step="0.1" required value="2.0">
+                        <small data-translate="gpaHint">GPA范围：0-4.0</small>
+                    </div>
+
+                    <button type="submit" id="recommendBtn" data-translate="recommendBtn">获取推荐结果</button>
+                </form>
+            </section>
+
+            <section class="result-section" id="resultSection" style="display: none;">
+                <h2>为您推荐的韩国大学</h2>
+                <div id="recommendationResults"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p data-translate="copyright">© 2024 韩国大学推荐系统 | 数据仅供参考，请以各大学官方要求为准</p>
+        </footer>
+    </div>
+
+    <script src="js/lang.js"></script>
+    <script src="js/recommend.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
