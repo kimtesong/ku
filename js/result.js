@@ -59,11 +59,81 @@ window.addEventListener('DOMContentLoaded', async () => {
         
         // 如果推荐结果为空，手动计算所有大学的匹配度以便调试
         if (window.recommendedUniversities.length === 0) {
+            console.log('=== 开始调试：手动计算所有大学的匹配度 ===');
             const allUniversities = await loadUniversities();
+            
+            // 检查前5所大学的详细计算过程
+            console.log('\n=== 前5所大学的详细计算过程 ===');
+            allUniversities.slice(0, 5).forEach(university => {
+                console.log(`\n大学: ${university.name}`);
+                console.log(`要求: TOPIK ${university.requirements.topik}, TOEFL ${university.requirements.toefl}, GPA ${university.requirements.gpa}`);
+                
+                const { topik, toefl, gpa } = formattedUserScores;
+                const { requirements } = university;
+                let score = 0;
+                
+                // TOPIK 匹配度计算
+                console.log('TOPIK计算:');
+                if (topik >= requirements.topik) {
+                    score += 40;
+                    console.log(`  TOPIK达到要求，基础分40分，当前总分: ${score}`);
+                    const topikExtra = topik - requirements.topik;
+                    score += topikExtra * 5;
+                    console.log(`  TOPIK额外加分: ${topikExtra * 5}，当前总分: ${score}`);
+                } else {
+                    const topikDeficit = requirements.topik - topik;
+                    const topikScore = Math.max(0, 40 - topikDeficit * 10);
+                    score += topikScore;
+                    console.log(`  TOPIK未达到要求，减分后得分: ${topikScore}，当前总分: ${score}`);
+                }
+                
+                // TOEFL 匹配度计算
+                console.log('TOEFL计算:');
+                if (toefl >= requirements.toefl) {
+                    score += 30;
+                    console.log(`  TOEFL达到要求，基础分30分，当前总分: ${score}`);
+                    const toeflExtra = toefl - requirements.toefl;
+                    score += toeflExtra * 0.3;
+                    console.log(`  TOEFL额外加分: ${toeflExtra * 0.3}，当前总分: ${score}`);
+                } else {
+                    const toeflDeficit = requirements.toefl - toefl;
+                    const toeflScore = Math.max(0, 30 - toeflDeficit * 0.5);
+                    score += toeflScore;
+                    console.log(`  TOEFL未达到要求，减分后得分: ${toeflScore}，当前总分: ${score}`);
+                }
+                
+                // GPA 匹配度计算
+                console.log('GPA计算:');
+                if (gpa >= requirements.gpa) {
+                    score += 30;
+                    console.log(`  GPA达到要求，基础分30分，当前总分: ${score}`);
+                    const gpaExtra = gpa - requirements.gpa;
+                    score += gpaExtra * 30;
+                    console.log(`  GPA额外加分: ${gpaExtra * 30}，当前总分: ${score}`);
+                } else {
+                    const gpaDeficit = requirements.gpa - gpa;
+                    const gpaScore = Math.max(0, 30 - gpaDeficit * 40);
+                    score += gpaScore;
+                    console.log(`  GPA未达到要求，减分后得分: ${gpaScore}，当前总分: ${score}`);
+                }
+                
+                const finalScore = Math.round(score);
+                console.log(`最终匹配度: ${finalScore}%`);
+            });
+            
+            // 计算所有大学的匹配度
             const universitiesWithScores = allUniversities.map(university => {
                 const matchScore = calculateMatchScore(formattedUserScores, university);
                 return { ...university, matchScore };
             });
+            
+            // 找出匹配度最高的大学
+            const maxScoreUniversity = universitiesWithScores.reduce((max, current) => {
+                return current.matchScore > max.matchScore ? current : max;
+            });
+            
+            console.log('\n=== 所有大学的匹配度统计 ===');
+            console.log('匹配度最高的大学:', maxScoreUniversity.name, '匹配度:', maxScoreUniversity.matchScore, '%');
             console.log('所有大学的匹配度:', universitiesWithScores.map(uni => `${uni.name}: ${uni.matchScore}`));
         }
         

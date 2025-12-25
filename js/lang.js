@@ -108,6 +108,8 @@ const translations = {
             applicationPeriod: '申请时间',
             resultAnnounce: '结果公布时间',
             backToList: '返回推荐列表',
+            agentApplication: '委托办理入学申请',
+            agentApplicationDesc: '点击这里，委托我们为您办理入学申请！',
             languageToggleTitle: '切换韩语'
         },
         korean: {
@@ -134,6 +136,30 @@ const translations = {
             applicationPeriod: '접수 기간',
             resultAnnounce: '결과 발표 일자',
             backToList: '추천 목록으로 돌아가기',
+            agentApplication: '입학 신청 위탁',
+            agentApplicationDesc: '여기를 클릭하여 입학 신청을 위탁하세요！',
+            languageToggleTitle: '중국어로 전환'
+        }
+    },
+    
+    // 委托办理入学申请页面文本
+    agent: {
+        chinese: {
+            agentPageTitle: '委托办理入学申请',
+            agentPageSubtitle: '我们专业为您提供韩国大学入学申请服务',
+            contactInfo: '联系方式',
+            wechatInfo: '微信咨询',
+            wechatDesc: '扫描二维码添加微信，了解更多入学申请信息',
+            backToSchool: '返回学校介绍',
+            languageToggleTitle: '切换韩语'
+        },
+        korean: {
+            agentPageTitle: '입학 신청 위탁',
+            agentPageSubtitle: '저희는 전문적으로 한국 대학 입학 신청 서비스를 제공합니다',
+            contactInfo: '연락처',
+            wechatInfo: '위챗 상담',
+            wechatDesc: 'QR 코드를 스캔하여 위챗을 추가하고, 입학 신청 정보를 더 알아보세요',
+            backToSchool: '학교 소개로 돌아가기',
             languageToggleTitle: '중국어로 전환'
         }
     },
@@ -184,6 +210,8 @@ function updateLanguage() {
         pageType = 'result';
     } else if (window.location.pathname.includes('school.html')) {
         pageType = 'school';
+    } else if (window.location.pathname.includes('agent_application.html')) {
+        pageType = 'agent';
     } else {
         pageType = 'index';
     }
@@ -191,6 +219,8 @@ function updateLanguage() {
     // 更新页面标题
     if (pageType === 'school') {
         document.title = translations.school[currentLanguage].schoolPageTitle;
+    } else if (pageType === 'agent') {
+        document.title = translations.agent[currentLanguage].agentPageTitle;
     } else {
         document.title = translations.common[currentLanguage].pageTitle;
     }
@@ -260,6 +290,11 @@ function toggleLanguage() {
     // 在结果页时，重新调用displayResults刷新内容
     if (window.location.pathname.includes('result.html') && typeof window.recommendedUniversities !== 'undefined' && typeof displayResults === 'function') {
         displayResults(window.recommendedUniversities);
+    }
+    
+    // 在学校页面时，重新调用displaySchoolInfo刷新内容
+    if (window.location.pathname.includes('school.html') && typeof window.currentUniversity !== 'undefined' && typeof displaySchoolInfo === 'function') {
+        displaySchoolInfo(window.currentUniversity);
     }
 }
 

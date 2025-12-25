@@ -48,16 +48,8 @@ window.addEventListener('DOMContentLoaded', async () => {
         // 显示学校信息
         displaySchoolInfo(selectedUniversity);
         
-        // 重写语言切换时的回调函数，确保学校信息也能实时更新
-        const originalSetupLanguageToggle = setupLanguageToggle;
-        setupLanguageToggle = () => {
-            originalSetupLanguageToggle();
-            
-            // 监听语言切换事件
-            document.getElementById('languageToggle').addEventListener('click', () => {
-                displaySchoolInfo(selectedUniversity);
-            });
-        };
+        // 将当前大学信息存储在全局变量中，以便语言切换时能刷新内容
+        window.currentUniversity = selectedUniversity;
         
     } catch (error) {
         console.error('加载学校信息时发生错误:', error);
@@ -89,7 +81,7 @@ function displaySchoolInfo(university) {
             ${university.imageUrl ? `<img class="school-image" src="${university.imageUrl}" alt="${name}">` : ''}
         </div>
         
-        <div class="school-info-section">
+        <div class="school-info-section" onclick="window.location.href='agent_application.html'" style="cursor: pointer;">
             <h3>${trans.basicInfo}</h3>
             <div class="school-details">
                 <table>
@@ -109,7 +101,7 @@ function displaySchoolInfo(university) {
             </div>
         </div>
         
-        <div class="school-info-section">
+        <div class="school-info-section" onclick="window.location.href='agent_application.html'" style="cursor: pointer;">
             <h3>${trans.requirements}</h3>
             <div class="school-details">
                 <table>
@@ -130,14 +122,14 @@ function displaySchoolInfo(university) {
         </div>
         
         ${university.description || university.koreanDescription ? `
-        <div class="school-info-section">
+        <div class="school-info-section" onclick="window.location.href='agent_application.html'" style="cursor: pointer;">
             <h3>${trans.description}</h3>
             <div class="school-description">${description}</div>
         </div>
         ` : ''}
         
         ${university.contact ? `
-        <div class="school-info-section">
+        <div class="school-info-section" onclick="window.location.href='agent_application.html'" style="cursor: pointer;">
             <h3>${trans.contact}</h3>
             <div class="school-contact">
                 ${university.contact.email ? `<p><strong>${trans.email}:</strong> ${university.contact.email}</p>` : ''}
@@ -148,7 +140,7 @@ function displaySchoolInfo(university) {
         ` : ''}
         
         ${university.applicationInfo ? `
-        <div class="school-info-section">
+        <div class="school-info-section" onclick="window.location.href='agent_application.html'" style="cursor: pointer;">
             <h3>${trans.applicationMaterials}</h3>
             <div class="school-application-materials">
                 <ul>
@@ -159,7 +151,7 @@ function displaySchoolInfo(university) {
             </div>
         </div>
         
-        <div class="school-info-section">
+        <div class="school-info-section" onclick="window.location.href='agent_application.html'" style="cursor: pointer;">
             <h3>${trans.marchIntake}</h3>
             <div class="school-application-timeline">
                 <p><strong>${trans.applicationPeriod}:</strong> ${university.applicationInfo.marchIntake.applicationStart} - ${university.applicationInfo.marchIntake.applicationEnd}</p>
@@ -167,7 +159,7 @@ function displaySchoolInfo(university) {
             </div>
         </div>
         
-        <div class="school-info-section">
+        <div class="school-info-section" onclick="window.location.href='agent_application.html'" style="cursor: pointer;">
             <h3>${trans.septemberIntake}</h3>
             <div class="school-application-timeline">
                 <p><strong>${trans.applicationPeriod}:</strong> ${university.applicationInfo.septemberIntake.applicationStart} - ${university.applicationInfo.septemberIntake.applicationEnd}</p>
