@@ -21,7 +21,7 @@ function loadUniversities() {
     },
     "description": "韩国最高学府，位于首尔，是韩国最具声望的国立大学。",
     "koreanDescription": "한국의 최고 학府로 서울에 위치한 한국에서 가장 명성 있는 국립 대학교입니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://identity.snu.ac.kr/webdata/uploads/identity/image/2021/06/page-1-01.png",
     "contact": {
       "email": "admission@snu.ac.kr",
       "phone": "+82-2-880-1234",
@@ -51,14 +51,14 @@ function loadUniversities() {
         ]
       },
       "marchIntake": {
-        "applicationStart": "9月1日",
-        "applicationEnd": "11月30日",
-        "resultAnnounce": "12月15日"
+        "applicationStart": "7月3日",
+        "applicationEnd": "7月6日",
+        "resultAnnounce": "10月13日"
       },
       "septemberIntake": {
-        "applicationStart": "3月1日",
-        "applicationEnd": "5月31日",
-        "resultAnnounce": "6月15日"
+        "applicationStart": "3月2日",
+        "applicationEnd": "3月7日",
+        "resultAnnounce": "6月23日"
       }
     }
   },
@@ -79,7 +79,7 @@ function loadUniversities() {
     },
     "description": "韩国顶尖的理工类大学，以科学技术研究闻名。",
     "koreanDescription": "한국 최고 수준의 공학 및 과학 대학으로 과학 기술 연구로 유명합니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.kaist.ac.kr/kr/img/content/sub01/sym_new_02.gif",
     "contact": {
       "email": "admission@kaist.ac.kr",
       "phone": "+82-42-350-1234",
@@ -139,7 +139,7 @@ function loadUniversities() {
     },
     "description": "韩国三所顶尖私立大学之一，拥有优秀的商学院和医学院。",
     "koreanDescription": "한국 3대 상위 사립 대학 중 하나로 우수한 경영대학과 의과대학을 보유합니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.yonsei.ac.kr/sites/sc/images/sub/img-symbol1.png",
     "contact": {
       "email": "admission@yonsei.ac.kr",
       "phone": "+82-2-2123-2114",
@@ -171,14 +171,14 @@ function loadUniversities() {
         ]
       },
       "marchIntake": {
-        "applicationStart": "9月1日",
-        "applicationEnd": "12月1日",
-        "resultAnnounce": "12月20日"
+        "applicationStart": "9月2日",
+        "applicationEnd": "9月13日",
+        "resultAnnounce": "12月6日"
       },
       "septemberIntake": {
-        "applicationStart": "3月1日",
-        "applicationEnd": "6月1日",
-        "resultAnnounce": "6月20日"
+        "applicationStart": "3月10日",
+        "applicationEnd": "3月26日",
+        "resultAnnounce": "6月19日"
       }
     }
   },
@@ -199,7 +199,7 @@ function loadUniversities() {
     },
     "description": "韩国三所顶尖私立大学之一，以社会科学和人文科学闻名。",
     "koreanDescription": "한국 3대 상위 사립 대학 중 하나로 사회과학과 인문학 분야로 유명합니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1504439468645-6450e84a71d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.korea.ac.kr/sites/ko/images/contents/symbol_1.png",
     "contact": {
       "email": "admission@korea.ac.kr",
       "phone": "+82-2-3290-2211",
@@ -231,14 +231,14 @@ function loadUniversities() {
         ]
       },
       "marchIntake": {
-        "applicationStart": "9月15日",
-        "applicationEnd": "12月15日",
-        "resultAnnounce": "12月25日"
+        "applicationStart": "8月4日",
+        "applicationEnd": "9月1日",
+        "resultAnnounce": "11月28日"
       },
       "septemberIntake": {
-        "applicationStart": "3月15日",
-        "applicationEnd": "6月15日",
-        "resultAnnounce": "6月25日"
+        "applicationStart": "2月24日",
+        "applicationEnd": "3月21日",
+        "resultAnnounce": "6月13日"
       }
     }
   },
@@ -247,7 +247,7 @@ function loadUniversities() {
     "name": "成均馆大学",
     "koreanName": "성균관대학교",
     "englishName": "Sungkyunkwan University",
-    "rank": "5",
+    "rank": "6",
     "location": "首尔特别市",
     "koreanLocation": "서울특별시",
     "type": "私立",
@@ -259,7 +259,7 @@ function loadUniversities() {
     },
     "description": "韩国历史最悠久的大学之一，拥有优秀的工科和文科专业。",
     "koreanDescription": "한국에서 가장 오래된 대학 중 하나로 우수한 공학과 인문학 전공을 보유합니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1516211697505-6f10b3a38186?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://pic.baike.soso.com/ugc/baikepic2/28496/20170824081311-924798182_jpg_375_300_15617.jpg/0",
     "contact": {
       "email": "admission@skku.edu",
       "phone": "+82-2-760-0114",
@@ -291,9 +291,9 @@ function loadUniversities() {
         ]
       },
       "marchIntake": {
-        "applicationStart": "9月1日",
-        "applicationEnd": "11月30日",
-        "resultAnnounce": "12月20日"
+        "applicationStart": "8月11日",
+        "applicationEnd": "11月17日",
+        "resultAnnounce": "1月5日"
       },
       "septemberIntake": {
         "applicationStart": "3月1日",
@@ -307,7 +307,7 @@ function loadUniversities() {
     "name": "西江大学",
     "koreanName": "서강대학교",
     "englishName": "Sogang University",
-    "rank": "6",
+    "rank": "11",
     "location": "首尔特别市",
     "koreanLocation": "서울특별시",
     "type": "私立",
@@ -319,11 +319,11 @@ function loadUniversities() {
     },
     "description": "以商学、经济学和国际研究闻名的私立大学。",
     "koreanDescription": "경영학, 경제학 및 국제 연구 분야로 유명한 사립 대학입니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.sogang.ac.kr/_nuxt/universityseal.05351d84.svg",
     "contact": {
       "email": "admission@sogang.ac.kr",
       "phone": "+82-2-705-8114",
-      "website": "https://www.sogang.ac.kr/eng/"
+      "website": "https://www.sogang.ac.kr"
     },
     "applicationInfo": {
       "materials": {
@@ -349,14 +349,14 @@ function loadUniversities() {
         ]
       },
       "marchIntake": {
-        "applicationStart": "9月1日",
-        "applicationEnd": "12月1日",
-        "resultAnnounce": "12月15日"
+        "applicationStart": "10月13日",
+        "applicationEnd": "11月21日",
+        "resultAnnounce": "12月26日"
       },
       "septemberIntake": {
-        "applicationStart": "3月1日",
-        "applicationEnd": "6月1日",
-        "resultAnnounce": "6月15日"
+        "applicationStart": "4月7日",
+        "applicationEnd": "5月16日",
+        "resultAnnounce": "6月27日"
       }
     }
   },
@@ -377,7 +377,7 @@ function loadUniversities() {
     },
     "description": "以工科和设计专业闻名的私立大学。",
     "koreanDescription": "공학과 디자인 전공으로 유명한 사립 대학입니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.hanyang.ac.kr/documents/20182/12154716/04144355170.jpg/50a6d54a-bb69-4b0b-ab74-46896bf85c25?t=1720071835173",
     "contact": {
       "email": "admission@hanyang.ac.kr",
       "phone": "+82-2-2220-1014",
@@ -407,14 +407,14 @@ function loadUniversities() {
         ]
       },
       "marchIntake": {
-        "applicationStart": "9月1日",
-        "applicationEnd": "11月30日",
-        "resultAnnounce": "12月15日"
+        "applicationStart": "9月2日",
+        "applicationEnd": "9月27日",
+        "resultAnnounce": "12月20日"
       },
       "septemberIntake": {
-        "applicationStart": "3月1日",
-        "applicationEnd": "5月31日",
-        "resultAnnounce": "6月15日"
+        "applicationStart": "3月4日",
+        "applicationEnd": "3月28日",
+        "resultAnnounce": "6月13日"
       }
     }
   },
@@ -429,13 +429,13 @@ function loadUniversities() {
     "type": "私立",
     "koreanType": "사립",
     "requirements": {
-      "topik": 3,
+      "topik": 4,
       "toefl": 75,
       "gpa": 3.4
     },
     "description": "拥有优秀的国际学院和酒店管理专业的私立大学。",
     "koreanDescription": "우수한 국제 학원과 호텔 관리 전공을 보유한 사립 대학입니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.khu.ac.kr/upload/cross/images/000001/imgSub0401.jpg",
     "contact": {
       "email": "admission@khu.ac.kr",
       "phone": "+82-2-961-0214",
@@ -493,7 +493,7 @@ function loadUniversities() {
     },
     "description": "韩国最著名的女子大学，以人文科学和社会科学闻名。",
     "koreanDescription": "한국에서 가장 유명한 여자 대학으로 인문과학과 사회과학 분야로 유명합니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1504704924782-8d2a2351c7a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.ewha.ac.kr/_res/ewha/img/intro/img-symbol01.png",
     "contact": {
       "email": "admission@ewha.ac.kr",
       "phone": "+82-2-3277-2114",
@@ -523,14 +523,14 @@ function loadUniversities() {
         ]
       },
       "marchIntake": {
-        "applicationStart": "9月1日",
-        "applicationEnd": "11月30日",
-        "resultAnnounce": "12月15日"
+        "applicationStart": "9月5日",
+        "applicationEnd": "10月10日",
+        "resultAnnounce": "11月1日"
       },
       "septemberIntake": {
-        "applicationStart": "3月1日",
-        "applicationEnd": "5月31日",
-        "resultAnnounce": "6月15日"
+        "applicationStart": "3月7日",
+        "applicationEnd": "4月11日",
+        "resultAnnounce": "5月3日"
       }
     }
   },
@@ -551,7 +551,7 @@ function loadUniversities() {
     },
     "description": "以戏剧、电影和传媒专业闻名的私立大学。",
     "koreanDescription": "연극, 영화 및 미디어 전공으로 유명한 사립 대학입니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.cau.ac.kr/cau/img/about/ui1_a_1.png",
     "contact": {
       "email": "admission@cau.ac.kr",
       "phone": "+82-2-820-5114",
@@ -831,7 +831,7 @@ function loadUniversities() {
     "name": "韩国外国语大学",
     "koreanName": "한국외국어대학교",
     "englishName": "Hankuk University of Foreign Studies",
-    "rank": "15",
+    "rank": "10",
     "location": "首尔特别市",
     "koreanLocation": "서울특별시",
     "type": "公立",
@@ -843,7 +843,7 @@ function loadUniversities() {
     },
     "description": "韩国最著名的外国语大学，提供多种语言课程。",
     "koreanDescription": "한국에서 가장 유명한 외국어 대학으로 다양한 언어 과정을 제공합니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1467011133845-1fc36b583e5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.hufs.ac.kr/sites/hufs/images/sub/simbol_mark1.png",
     "contact": {
       "email": "admission@hufs.ac.kr",
       "phone": "+82-2-2173-2114",
@@ -901,7 +901,7 @@ function loadUniversities() {
     },
     "description": "韩国顶尖的科技大学，以工程和自然科学闻名。",
     "koreanDescription": "한국 최고 수준의 기술 대학으로 공학과 자연과학 분야로 유명합니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.postech.ac.kr/_res/postech/kor/img/sub/postech_fullname_logo1.png",
     "contact": {
       "email": "admission@postech.ac.kr",
       "phone": "+82-54-279-2114",
@@ -949,15 +949,15 @@ function loadUniversities() {
     "name": "蔚山大学",
     "koreanName": "울산대학교",
     "englishName": "Ulsan National Institute of Science and Technology",
-    "rank": "17",
+    "rank": "21",
     "location": "蔚山广域市",
     "koreanLocation": "울산광역시",
     "type": "公立",
     "koreanType": "국립",
     "requirements": {
-      "topik": 5,
-      "toefl": 79,
-      "gpa": 3.4
+      "topik": 4,
+      "toefl": 73,
+      "gpa": 3.2
     },
     "description": "蔚山广域市的国立科技大学，与汽车产业紧密合作。",
     "koreanDescription": "울산광역시의 국립 과학 기술 대학으로 자동차 산업과 밀접한 협력 관계를 맺고 있습니다.",
@@ -1007,7 +1007,7 @@ function loadUniversities() {
     "name": "明知大学",
     "koreanName": "명지대학교",
     "englishName": "Myongji University",
-    "rank": "18",
+    "rank": "28",
     "location": "首尔特别市",
     "koreanLocation": "서울특별시",
     "type": "私立",
@@ -1065,7 +1065,7 @@ function loadUniversities() {
     "name": "世宗大学",
     "koreanName": "세종대학교",
     "englishName": "Sejong University",
-    "rank": "9",
+    "rank": "12",
     "location": "首尔特别市",
     "koreanLocation": "서울특별시",
     "type": "私立",
@@ -1413,7 +1413,7 @@ function loadUniversities() {
     "name": "济州大学",
     "koreanName": "제주대학교",
     "englishName": "Jeju National University",
-    "rank": "25",
+    "rank": "35",
     "location": "济州特别自治道济州市",
     "koreanLocation": "제주특별자치도 제주시",
     "type": "公立",
@@ -1468,12 +1468,12 @@ function loadUniversities() {
   },
   {
     "id": 26,
-    "name": "韩东国际大学",
-    "koreanName": "한동국제대학교",
-    "englishName": "Handong Global University",
-    "rank": "26",
-    "location": "庆尚北道浦项市",
-    "koreanLocation": "경상북도 포항시",
+    "name": "祥明大学",
+    "koreanName": "상명대학교",
+    "englishName": "Sangmyung University",
+    "rank": "46",
+    "location": "首尔特别市",
+    "koreanLocation": "서울특별시",
     "type": "私立",
     "koreanType": "사립",
     "requirements": {
@@ -1481,13 +1481,13 @@ function loadUniversities() {
       "toefl": 50,
       "gpa": 3.2
     },
-    "description": "浦项市的私立国际大学，强调全球化教育。",
-    "koreanDescription": "포항시의 사립 국제 대학으로 글로벌 교육을 강조합니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "description": "祥明大学是首尔的知名私立大学，以艺术和人文科学著称。",
+    "koreanDescription": "상명대학교는 서울의 유명한 사립 대학으로 인문학을 중심으로 합니다.",
+    "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     "contact": {
-      "email": "admission@handong.edu",
-      "phone": "+82-54-260-3114",
-      "website": "https://www.handong.edu/eng/"
+      "email": "admission@sangmyung.ac.kr",
+      "phone": "+82-2-2287-5000",
+      "website": "https://www.sangmyung.ac.kr/"
     },
     "applicationInfo": {
       "materials": {
@@ -1529,7 +1529,7 @@ function loadUniversities() {
     "name": "光云大学",
     "koreanName": "광운대학교",
     "englishName": "Kwangwoon University",
-    "rank": "27",
+    "rank": "17",
     "location": "首尔特别市",
     "koreanLocation": "서울특별시",
     "type": "私立",
@@ -1587,7 +1587,7 @@ function loadUniversities() {
     "name": "韩国天主教大学",
     "koreanName": "가톨릭대학교",
     "englishName": "Catholic University of Korea",
-    "rank": "8",
+    "rank": "18",
     "location": "首尔特别市",
     "koreanLocation": "서울특별시",
     "type": "私立",
@@ -1758,26 +1758,26 @@ function loadUniversities() {
   },
   {
     "id": 31,
-    "name": "梨花女子大学国际校区",
-    "koreanName": "이화여자대학교 국제캠퍼스",
-    "englishName": "Ewha Womans University International Campus",
-    "rank": "31",
+    "name": "韩国江南大学",
+    "koreanName": "강남대학교",
+    "englishName": "Kangnam University",
+    "rank": "21",
     "location": "京畿道龙仁市",
     "koreanLocation": "경기도 용인시",
     "type": "私立",
     "koreanType": "사립",
     "requirements": {
       "topik": 0,
-      "toefl": 76,
-      "gpa": 3.4
+      "toefl": 60,
+      "gpa": 2.5
     },
-    "description": "梨花女子大学的国际校区，提供国际化的教育环境。",
-    "koreanDescription": "이화여자대학교의 국제 캠퍼스로 국제화된 교육 환경을 제공합니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1508002364570-1994e083c70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "description": "韩国江南大学是韩国一所知名私立大学，拥有良好的学术声誉。",
+    "koreanDescription": "강남대학교는 한국의 유명한 사립 대학으로 좋은 학술적 평가를 받고 있습니다.",
+    "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     "contact": {
-      "email": "admission@ewha.ac.kr",
-      "phone": "+82-31-330-3114",
-      "website": "https://www.ewha.ac.kr/eng/"
+      "email": "admission@kangnam.ac.kr",
+      "phone": "+82-31-280-3114",
+      "website": "https://www.kangnam.ac.kr/"
     },
     "applicationInfo": {
       "materials": {
@@ -1803,14 +1803,14 @@ function loadUniversities() {
         ]
       },
       "marchIntake": {
-        "applicationStart": "9月15日",
-        "applicationEnd": "12月15日",
-        "resultAnnounce": "12月30日"
+        "applicationStart": "10月5日",
+        "applicationEnd": "11月10日",
+        "resultAnnounce": "12月1日"
       },
       "septemberIntake": {
-        "applicationStart": "3月15日",
-        "applicationEnd": "6月15日",
-        "resultAnnounce": "6月30日"
+        "applicationStart": "3月7日",
+        "applicationEnd": "6月11日",
+        "resultAnnounce": "7月3日"
       }
     }
   },
@@ -1877,7 +1877,7 @@ function loadUniversities() {
     "name": "韩国航空大学",
     "koreanName": "한국항공대학교",
     "englishName": "Korea Aerospace University",
-    "rank": "33",
+    "rank": "43",
     "location": "京畿道高阳市",
     "koreanLocation": "경기도 고양시",
     "type": "公立",
@@ -2109,7 +2109,7 @@ function loadUniversities() {
     "name": "仁荷大学",
     "koreanName": "인하대학교",
     "englishName": "Inha University",
-    "rank": "37",
+    "rank": "17",
     "location": "仁川广域市",
     "koreanLocation": "인천광역시",
     "type": "私立",
@@ -2167,7 +2167,7 @@ function loadUniversities() {
     "name": "明知大学龙仁校区",
     "koreanName": "명지대학교 용인캠퍼스",
     "englishName": "Myongji University Yongin Campus",
-    "rank": "38",
+    "rank": "48",
     "location": "京畿道龙仁市",
     "koreanLocation": "경기도 용인시",
     "type": "私立",
@@ -2214,8 +2214,8 @@ function loadUniversities() {
     "koreanType": "국립",
     "requirements": {
       "topik": 4,
-      "toefl": 85,
-      "gpa": 3.6
+      "toefl": 70,
+      "gpa": 3.0
     },
     "description": "韩国顶尖的科学技术研究机构，提供研究生教育。",
     "koreanDescription": "한국 최고 수준의 과학 기술 연구 기관으로 대학원 교육을 제공합니다.",
@@ -2259,11 +2259,11 @@ function loadUniversities() {
     },
     "description": "首尔的私立大学，以设计和工程专业闻名。",
     "koreanDescription": "서울의 사립 대학으로 디자인과 공학 전공으로 유명합니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1508002364570-1994e083c70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     "contact": {
-      "email": "admission@kookmin.ac.kr",
-      "phone": "+82-2-910-3114",
-      "website": "https://www.kookmin.ac.kr/eng/"
+      "email": "admission@sejong.ac.kr",
+      "phone": "+82-2-3408-3114",
+      "website": "https://www.sejong.ac.kr/eng/"
     },
     "applicationInfo": {
       "materials": {
@@ -2324,21 +2324,21 @@ function loadUniversities() {
   },
   {
     "id": 42,
-    "name": "昌原大学",
-    "koreanName": "창원대학교",
-    "englishName": "Changwon National University",
+    "name": "新罗大学",
+    "koreanName": "신라대학교",
+    "englishName": "Silla University",
     "rank": "42",
-    "location": "庆尚南道昌原市",
-    "koreanLocation": "경상남도 창원시",
-    "type": "公立",
-    "koreanType": "국립",
+    "location": "釜山市",
+    "koreanLocation": "부산시",
+    "type": "私立",
+    "koreanType": "사립",
     "requirements": {
       "topik": 3,
       "toefl": 68,
       "gpa": 3.0
     },
-    "description": "庆尚南道的国立大学，以工程和自然科学闻名。",
-    "koreanDescription": "경상남도의 국립 대학으로 공학과 자연 과학 분야로 유명합니다.",
+    "description": "釜山市的私立大学，享有很高的声誉。",
+    "koreanDescription": "부산시의 유명한 사립대입니다다.",
     "imageUrl": "https://images.unsplash.com/photo-1467011133845-1fc36b583e5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     "contact": {
       "email": "admission@changwon.ac.kr",
@@ -2407,7 +2407,7 @@ function loadUniversities() {
     "name": "延世大学分校区",
     "koreanName": "연세대학교 미래캠퍼스",
     "englishName": "Yanse University",
-    "rank": "14",
+    "rank": "4",
     "location": "江原道",
     "koreanLocation": "강원도",
     "type": "私立",
@@ -2419,7 +2419,7 @@ function loadUniversities() {
     },
     "description": "韩国最好的私立大学之一。",
     "koreanDescription": "한국의 제일 좋은 사립 대학 중 하나입니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.yonsei.ac.kr/sites/sc/images/sub/img-symbol1.png",
     "contact": {
       "email": "admission@yonsei.ac.kr",
       "phone": "+82-2-2123-2114",
@@ -2431,14 +2431,14 @@ function loadUniversities() {
         "korean": ["고등학교 졸업증명서 및 성적표（공증）", "TOPIK 성적표（또는 관련 증명）", "여권 복사본", "사진", "자기소개서", "추천서", "자금 증명서"]
       },
       "marchIntake": {
-        "applicationStart": "9月15日",
-        "applicationEnd": "12月15日",
-        "resultAnnounce": "12月30日"
+        "applicationStart": "8月5日",
+        "applicationEnd": "11月18日",
+        "resultAnnounce": "12月12日"
       },
       "septemberIntake": {
-        "applicationStart": "3月15日",
-        "applicationEnd": "6月15日",
-        "resultAnnounce": "6月30日"
+        "applicationStart": "4月16日",
+        "applicationEnd": "4月30日",
+        "resultAnnounce": "6月13日"
       }
     }
   },
@@ -2527,7 +2527,7 @@ function loadUniversities() {
     "name": "平泽大学",
     "koreanName": "평택대학교",
     "englishName": "Pyeongtaek University",
-    "rank": "47",
+    "rank": "37",
     "location": "京畿道平泽市",
     "koreanLocation": "경기도 평택시",
     "type": "私立",
@@ -2543,7 +2543,7 @@ function loadUniversities() {
     "contact": {
       "email": "admission@pknu.ac.kr",
       "phone": "+82-31-670-3114",
-      "website": "https://www.pknu.ac.kr/eng/"
+      "website": "https://www.ptu.ac.kr"
     },
     "applicationInfo": {
       "materials": {
@@ -2581,9 +2581,9 @@ function loadUniversities() {
     "koreanDescription": "서울특별시의 공립 대학으로 도시 계획과 사회 과학 분야로 유명합니다.",
     "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     "contact": {
-      "email": "admission@uos.ac.kr",
-      "phone": "+82-2-2123-2114",
-      "website": "https://www.uos.ac.kr/eng/"
+      "email": "admission@kookmin.ac.kr",
+      "phone": "+82-2-910-3114",
+      "website": "https://www.kookmin.ac.kr/eng/"
     },
     "applicationInfo": {
       "materials": {
@@ -2607,7 +2607,7 @@ function loadUniversities() {
     "name": "高丽大学分校区",
     "koreanName": "고려대학교 지방캠퍼스",
     "englishName": "Korea University",
-    "rank": "19",
+    "rank": "5",
     "location": "世宗市",
     "koreanLocation": "세종시",
     "type": "私立",
@@ -2619,7 +2619,7 @@ function loadUniversities() {
     },
     "description": "韩国最好的私立大学之一。",
     "koreanDescription": "한국의 제일 좋은 사립 대학 중 하나입니다.",
-    "imageUrl": "https://images.unsplash.com/photo-1504439468645-6450e84a71d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://www.korea.ac.kr/sites/ko/images/contents/symbol_1.png",
     "contact": {
       "email": "admission@korea.ac.kr",
       "phone": "+82-2-3290-2211",
@@ -2631,14 +2631,14 @@ function loadUniversities() {
         "korean": ["고등학교 졸업증명서 및 성적표（공증）", "TOPIK 성적표（또는 관련 증명）", "여권 복사본", "사진", "자기소개서", "추천서", "자금 증명서"]
       },
       "marchIntake": {
-        "applicationStart": "9月15日",
-        "applicationEnd": "12月15日",
-        "resultAnnounce": "12月30日"
+        "applicationStart": "10月10日",
+        "applicationEnd": "10月31日",
+        "resultAnnounce": "12月26日"
       },
       "septemberIntake": {
-        "applicationStart": "3月15日",
-        "applicationEnd": "6月15日",
-        "resultAnnounce": "6月30日"
+        "applicationStart": "4月15日",
+        "applicationEnd": "5月10日",
+        "resultAnnounce": "7月5日"
       }
     }
   },
@@ -2647,7 +2647,7 @@ function loadUniversities() {
     "name": "汉阳大学ERICA校区",
     "koreanName": "한양대학교 ERICA 캠퍼스",
     "englishName": "Hanyang University ERICA Campus",
-    "rank": "20",
+    "rank": "7",
     "location": "京畿道安山市",
     "koreanLocation": "경기도 안산시",
     "type": "私立",
@@ -2671,14 +2671,14 @@ function loadUniversities() {
         "korean": ["고등학교 졸업증명서 및 성적표（공증）", "TOPIK 성적표（또는 관련 증명）", "여권 복사본", "사진", "자기소개서", "추천서", "자금 증명서"]
       },
       "marchIntake": {
-        "applicationStart": "9月15日",
-        "applicationEnd": "12月15日",
-        "resultAnnounce": "12月30日"
+        "applicationStart": "9月2日",
+        "applicationEnd": "9月27日",
+        "resultAnnounce": "12月20日"
       },
       "septemberIntake": {
-        "applicationStart": "3月15日",
-        "applicationEnd": "6月15日",
-        "resultAnnounce": "6月30日"
+        "applicationStart": "3月4日",
+        "applicationEnd": "3月28日",
+        "resultAnnounce": "6月13日"
       }
     }
   }
@@ -2740,9 +2740,13 @@ async function recommendUniversities(userScores) {
         matchScore: calculateMatchScore(userScores, university)
     }));
     
-    // 根据匹配度排序，返回前10名
+    // 根据匹配度与100%的距离排序，返回前10名
     return universitiesWithScores
-        .sort((a, b) => b.matchScore - a.matchScore)
+        .sort((a, b) => {
+            const distanceA = Math.abs(a.matchScore - 100);
+            const distanceB = Math.abs(b.matchScore - 100);
+            return distanceA - distanceB;
+        })
         .slice(0, 10);
 }
 

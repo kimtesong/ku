@@ -4,6 +4,9 @@
 const recommendationResults = document.getElementById('recommendationResults');
 const noResults = document.getElementById('noResults');
 const backBtn = document.getElementById('backBtn');
+const applicationOrderBtn = document.getElementById('applicationOrderBtn');
+const whitelistBtn = document.getElementById('whitelistBtn');
+const tuitionFeesBtn = document.getElementById('tuitionFeesBtn');
 
 // 页面加载时执行
 window.addEventListener('DOMContentLoaded', async () => {
@@ -56,6 +59,9 @@ window.addEventListener('DOMContentLoaded', async () => {
         
         console.log('推荐结果:', window.recommendedUniversities);
         console.log('推荐结果数量:', window.recommendedUniversities.length);
+        
+        // 保存推荐结果到localStorage，供学费页面使用
+        localStorage.setItem('recommendedUniversities', JSON.stringify(window.recommendedUniversities));
         
         // 如果推荐结果为空，手动计算所有大学的匹配度以便调试
         if (window.recommendedUniversities.length === 0) {
@@ -144,6 +150,27 @@ window.addEventListener('DOMContentLoaded', async () => {
         
         // 显示推荐结果
         displayResults(window.recommendedUniversities);
+        
+        // 添加申请顺序按钮事件监听器
+        if (applicationOrderBtn && window.recommendedUniversities.length > 0) {
+            applicationOrderBtn.addEventListener('click', () => {
+                window.location.href = 'application_order.html';
+            });
+        }
+        
+        // 添加白名单按钮事件监听器
+        if (whitelistBtn) {
+            whitelistBtn.addEventListener('click', () => {
+                window.open('https://yxcx.cscse.edu.cn/rzyxmd', '_blank');
+            });
+        }
+        
+        // 添加学费按钮事件监听器
+        if (tuitionFeesBtn && window.recommendedUniversities.length > 0) {
+            tuitionFeesBtn.addEventListener('click', () => {
+                window.location.href = 'tuition_fees.html';
+            });
+        }
     } catch (error) {
         console.error('处理推荐结果时发生错误:', error);
         console.error('错误堆栈:', error.stack);

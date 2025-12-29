@@ -25,6 +25,7 @@ const translations = {
                 gpaLabel: '高中平均成绩（GPA）：',
                 gpaHint: 'GPA范围：0-4.0',
                 recommendBtn: '获取推荐结果',
+                applicationOrderBtn: '查看申请顺序',
                 languageToggleTitle: '切换韩语'
             },
             korean: {
@@ -38,6 +39,7 @@ const translations = {
                 gpaLabel: '고등학교 평균 성적（GPA）：',
                 gpaHint: 'GPA 범위：0-4.0',
                 recommendBtn: '추천 결과 받기',
+                applicationOrderBtn: '신청 순서 보기',
                 languageToggleTitle: '중국어로 전환'
             }
     },
@@ -60,6 +62,9 @@ const translations = {
             toeflRequirementSuffix: '分',
             gpaRequirement: '🎓 GPA要求:',
             matchScoreLabel: '匹配度:',
+            applicationOrderBtn: '查看申请顺序',
+            whitelistBtn: '确认教育部韩国院校白名单',
+            tuitionFeesBtn: '查看学费',
             languageToggleTitle: '切换韩语'
         },
         korean: {
@@ -78,6 +83,9 @@ const translations = {
             toeflRequirementSuffix: '점',
             gpaRequirement: '🎓 GPA 요구사항:',
             matchScoreLabel: '일치도:',
+            applicationOrderBtn: '신청 순서 보기',
+            whitelistBtn: '교육부 한국 대학 화이트리스트 확인',
+            tuitionFeesBtn: '등록금 보기',
             languageToggleTitle: '중국어로 전환'
         }
     },
@@ -142,6 +150,40 @@ const translations = {
         }
     },
     
+    // 申请顺序页面文本
+    application_order: {
+        chinese: {
+            applicationOrderTitle: '申请顺序',
+            applicationOrderSubtitle: '根据申请截止时间排序的推荐大学',
+            applicationOrderSectionTitle: '申请截止时间排序',
+            backToResults: '返回推荐结果',
+            deadlineLabel: '申请截止时间',
+            matchScoreLabel: '匹配度',
+            rankLabel: '排名',
+            locationLabel: '所在地',
+            applicationOrderTooltip: '按申请截止时间排序，最先截止的大学排在前面',
+            marchIntakeLabel: '3月入学',
+            septemberIntakeLabel: '9月入学',
+            intakeToggleTip: '点击切换查看不同入学时间的申请截止时间',
+            languageToggleTitle: '切换韩语'
+        },
+        korean: {
+            applicationOrderTitle: '신청 순서',
+            applicationOrderSubtitle: '신청 마감 시간별로 정렬된 추천 대학',
+            applicationOrderSectionTitle: '신청 마감 시간별 정렬',
+            backToResults: '추천 결과로 돌아가기',
+            deadlineLabel: '신청 마감 시간',
+            matchScoreLabel: '일치도',
+            rankLabel: '순위',
+            locationLabel: '위치',
+            applicationOrderTooltip: '신청 마감 시간별로 정렬, 먼저 마감하는 대학이 앞에 있음',
+            marchIntakeLabel: '3월 입학',
+            septemberIntakeLabel: '9월 입학',
+            intakeToggleTip: '다른 입학 시간의 신청 마감 시간을 확인하려면 클릭하세요',
+            languageToggleTitle: '중국어로 전환'
+        }
+    },
+    
     // 委托办理入学申请页面文本
     agent: {
         chinese: {
@@ -151,6 +193,7 @@ const translations = {
             wechatInfo: '微信咨询',
             wechatDesc: '扫描二维码添加微信，了解更多入学申请信息',
             backToSchool: '返回学校介绍',
+            koreanTrainingBtn: '韩语培训',
             languageToggleTitle: '切换韩语'
         },
         korean: {
@@ -160,6 +203,53 @@ const translations = {
             wechatInfo: '위챗 상담',
             wechatDesc: 'QR 코드를 스캔하여 위챗을 추가하고, 입학 신청 정보를 더 알아보세요',
             backToSchool: '학교 소개로 돌아가기',
+            koreanTrainingBtn: '한국어 교육',
+            languageToggleTitle: '중국어로 전환'
+        }
+    },
+    
+    // 韩语培训页面文本
+    koreanTraining: {
+        chinese: {
+            trainingPageTitle: '韩语培训',
+            trainingPageSubtitle: '提高韩语水平，申请更好的韩国大学',
+            contactInfo: '联系方式',
+            trainingTypesTitle: '韩语培训类别',
+            onlineTrainingTitle: '网上1对1培训',
+            onlineTrainingDesc: '一对一在线韩语培训课程，灵活安排时间，针对性提高韩语水平。',
+            offlineTrainingTitle: '线下培训',
+            offlineTrainingDesc: '面对面韩语培训课程，与老师和其他同学互动交流，学习效果更佳。',
+            offlineLocationsTitle: '线下培训地址',
+            location1Name: '北京外国语大学',
+            location1Desc: '北京市海淀区西三环北路19号',
+            location2Name: '中国传媒大学',
+            location2Desc: '北京市朝阳区定福庄东街1号',
+            location3Name: '华东师范大学',
+            location3Desc: '上海市普陀区中山北路3663号',
+            advertisementTitle: '专业韩语培训',
+            advertisementText: '确保增加韩语水平，能够申请到更好的大学',
+            backToAgent: '返回委托办理',
+            languageToggleTitle: '切换韩语'
+        },
+        korean: {
+            trainingPageTitle: '한국어 교육',
+            trainingPageSubtitle: '한국어 실력을 향상시켜 더 나은 한국 대학에 입학하세요',
+            contactInfo: '연락처',
+            trainingTypesTitle: '한국어 교육 유형',
+            onlineTrainingTitle: '온라인 1:1 교육',
+            onlineTrainingDesc: '개인 맞춤형 온라인 한국어 교육 과정에서 시간을 유연하게 조정하고 한국어 실력을 집중적으로 향상시킬 수 있습니다.',
+            offlineTrainingTitle: '오프라인 교육',
+            offlineTrainingDesc: '교사 및 다른 학생들과 대면하여 대화하는 오프라인 한국어 교육 과정으로 학습 효과가 더 좋습니다.',
+            offlineLocationsTitle: '오프라인 교육 주소',
+            location1Name: '베이징외국어대학교',
+            location1Desc: '베이징시하이디엔구 시산환북로 19호',
+            location2Name: '중국언론대학교',
+            location2Desc: '베이징시차오양구딩푸좡동제1호',
+            location3Name: '동화사범대학교',
+            location3Desc: '상하이시푸터우구중산베이루 3663호',
+            advertisementTitle: '전문 한국어 교육',
+            advertisementText: '한국어 실력을 확실히 향상시켜 더 나은 대학에 입학할 수 있습니다',
+            backToAgent: '위탁 신청으로 돌아가기',
             languageToggleTitle: '중국어로 전환'
         }
     },
@@ -179,6 +269,52 @@ const translations = {
             toeflRange: 'TOEFL 점수는 0-120 사이여야 합니다',
             gpaRange: 'GPA는 0-4.0 사이여야 합니다',
             mustBeNumber: '유효한 숫자를 입력해 주세요'
+        }
+    },
+    
+    // 学费页面文本
+    tuition_fees: {
+        chinese: {
+            pageTitle: '学费信息',
+            headerTitle: '推荐大学学费详情',
+            headerSubtitle: '根据您的成绩推荐大学的学费信息',
+            backToResults: '返回推荐结果',
+            tuitionSectionTitle: '推荐大学学费详情',
+            noTuitionData: '暂无学费信息，请返回推荐结果页面。',
+            universityRank: '全国第',
+            universityRankSuffix: '名',
+            universityLocation: '📍 ',
+            matchScoreLabel: '匹配度:',
+            liberalArtsTitle: '文科',
+            liberalArtsDesc: '文科类专业学费',
+            scienceEngineeringTitle: '理工科',
+            scienceEngineeringDesc: '理工科类专业学费',
+            artsTitle: '艺术类',
+            artsDesc: '艺术类专业学费',
+            tuitionNote: '注：学费信息仅供参考，具体费用请以各大学官方公布为准',
+            viewDetailsBtn: '查看学校详情',
+            languageToggleTitle: '切换韩语'
+        },
+        korean: {
+            pageTitle: '등록금 정보',
+            headerTitle: '추천 대학 등록금 상세 정보',
+            headerSubtitle: '성적을 바탕으로 추천한 대학의 등록금 정보',
+            backToResults: '추천 결과로 돌아가기',
+            tuitionSectionTitle: '추천 대학 등록금 상세 정보',
+            noTuitionData: '등록금 정보가 없습니다. 추천 결과 페이지로 돌아가주세요.',
+            universityRank: '전국 제',
+            universityRankSuffix: '위',
+            universityLocation: '📍 ',
+            matchScoreLabel: '일치도:',
+            liberalArtsTitle: '문과',
+            liberalArtsDesc: '문과 계열 등록금',
+            scienceEngineeringTitle: '이과',
+            scienceEngineeringDesc: '이과 계열 등록금',
+            artsTitle: '예술계',
+            artsDesc: '예술계열 등록금',
+            tuitionNote: '주：등록금 정보는 참고용이며, 구체적인 비용은 각 대학 공식 발표를 기준으로 하세요',
+            viewDetailsBtn: '학교 상세 보기',
+            languageToggleTitle: '중국어로 전환'
         }
     },
     
@@ -210,8 +346,14 @@ function updateLanguage() {
         pageType = 'result';
     } else if (window.location.pathname.includes('school.html')) {
         pageType = 'school';
+    } else if (window.location.pathname.includes('application_order.html')) {
+        pageType = 'application_order';
     } else if (window.location.pathname.includes('agent_application.html')) {
         pageType = 'agent';
+    } else if (window.location.pathname.includes('korean_training.html')) {
+        pageType = 'koreanTraining';
+    } else if (window.location.pathname.includes('tuition_fees.html')) {
+        pageType = 'tuition_fees';
     } else {
         pageType = 'index';
     }
@@ -219,8 +361,14 @@ function updateLanguage() {
     // 更新页面标题
     if (pageType === 'school') {
         document.title = translations.school[currentLanguage].schoolPageTitle;
+    } else if (pageType === 'application_order') {
+        document.title = translations.application_order[currentLanguage].applicationOrderTitle;
     } else if (pageType === 'agent') {
         document.title = translations.agent[currentLanguage].agentPageTitle;
+    } else if (pageType === 'koreanTraining') {
+        document.title = translations.koreanTraining[currentLanguage].trainingPageTitle;
+    } else if (pageType === 'tuition_fees') {
+        document.title = translations.tuition_fees[currentLanguage].pageTitle;
     } else {
         document.title = translations.common[currentLanguage].pageTitle;
     }
@@ -295,6 +443,11 @@ function toggleLanguage() {
     // 在学校页面时，重新调用displaySchoolInfo刷新内容
     if (window.location.pathname.includes('school.html') && typeof window.currentUniversity !== 'undefined' && typeof displaySchoolInfo === 'function') {
         displaySchoolInfo(window.currentUniversity);
+    }
+    
+    // 在申请顺序页面时，重新调用displayApplicationOrder刷新内容
+    if (window.location.pathname.includes('application_order.html') && typeof window.recommendedUniversities !== 'undefined' && typeof displayApplicationOrder === 'function') {
+        displayApplicationOrder(window.recommendedUniversities);
     }
 }
 

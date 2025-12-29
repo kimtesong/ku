@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>申请顺序</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* 申请顺序页面专用样式 */
+        .container.application-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            background: transparent;
+        }
+
+        /* 申请顺序页面专用样式 */
+        .application-order-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        /* 确保header和footer在深色背景上正确显示 */
+        .container.application-container header,
+        .container.application-container footer {
+            color: white;
+            text-align: center;
+        }
+
+        /* 调整页面标题样式 */
+        .container.application-container header h1 {
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-weight: 700;
+        }
+
+        /* 3层颜色结构 - 白色中间容器（应用到main元素） */
+        .container.application-container main {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .application-order-section {
+            margin-bottom: 20px;
+        }
+
+        .application-order-section h2 {
+            color: #4682B4;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        .application-item {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid #9c27b0;
+        }
+
+        .application-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .application-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .application-item-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .application-item-rank {
+            font-size: 1rem;
+            color: #7f8c8d;
+            background: rgba(156, 39, 176, 0.1);
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+
+        .application-item-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .application-detail-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .application-detail-label {
+            font-weight: 600;
+            color: #4682B4;
+            margin-right: 8px;
+        }
+
+        .application-detail-value {
+            color: #2c3e50;
+        }
+
+        .deadline-urgent {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .deadline-normal {
+            color: #27ae60;
+        }
+
+        /* 主题化样式 */
+        body.theme-red .application-item {
+            border-left-color: #e74c3c;
+        }
+        
+        body.theme-red .application-detail-label {
+            color: #e74c3c;
+        }
+
+        body.theme-orange .application-item {
+            border-left-color: #ff7043;
+        }
+        
+        body.theme-orange .application-detail-label {
+            color: #ff7043;
+        }
+
+        body.theme-yellow .application-item {
+            border-left-color: #ffc107;
+        }
+        
+        body.theme-yellow .application-detail-label {
+            color: #ffc107;
+        }
+
+        body.theme-green .application-item {
+            border-left-color: #4caf50;
+        }
+        
+        body.theme-green .application-detail-label {
+            color: #4caf50;
+        }
+
+        body.theme-blue .application-item {
+            border-left-color: #4682B4;
+        }
+        
+        body.theme-blue .application-detail-label {
+            color: #4682B4;
+        }
+
+        body.theme-purple .application-item {
+            border-left-color: #9c27b0;
+        }
+        
+        body.theme-purple .application-detail-label {
+            color: #9c27b0;
+        }
+        
+        /* 3月/9月入学切换按钮样式 */
+        .intake-toggle-container {
+            margin-bottom: 20px;
+        }
+        
+        .intake-toggle {
+            display: inline-flex;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .intake-btn {
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #555;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            font-weight: 500;
+            outline: none;
+            border-right: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .intake-btn:last-child {
+            border-right: none;
+        }
+        
+        .intake-btn:hover {
+            background: rgba(70, 130, 180, 0.1);
+        }
+        
+        .intake-btn.active {
+            background: #4682B4;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .intake-label {
+            display: inline-block;
+        }
+        
+        /* 主题化样式 - 确保切换按钮与主题色保持一致 */
+        body.theme-red .intake-btn.active {
+            background: #e74c3c;
+        }
+        
+        body.theme-orange .intake-btn.active {
+            background: #ff7043;
+        }
+        
+        body.theme-yellow .intake-btn.active {
+            background: #ffc107;
+            color: #333;
+        }
+        
+        body.theme-green .intake-btn.active {
+            background: #4caf50;
+        }
+        
+        body.theme-blue .intake-btn.active {
+            background: #4682B4;
+        }
+        
+        body.theme-purple .intake-btn.active {
+            background: #9c27b0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container application-container">
+        <header>
+            <div class="header-content">
+                <h1 data-translate="applicationOrderTitle">申请顺序</h1>
+                <button id="languageToggle" class="language-toggle" data-translate-title="languageToggleTitle" title="切换韩语">
+                    KR
+                </button>
+            </div>
+            
+            <!-- 主题切换按钮 -->
+            <div class="theme-toggle">
+                <button class="theme-btn theme-red" data-theme="red" title="红色主题"></button>
+                <button class="theme-btn theme-orange" data-theme="orange" title="橙色主题"></button>
+                <button class="theme-btn theme-yellow" data-theme="yellow" title="黄色主题"></button>
+                <button class="theme-btn theme-green" data-theme="green" title="绿色主题"></button>
+                <button class="theme-btn theme-blue active" data-theme="blue" title="蓝色主题"></button>
+                <button class="theme-btn theme-purple" data-theme="purple" title="紫色主题"></button>
+            </div>
+            <p data-translate="applicationOrderSubtitle">根据申请截止时间排序的推荐大学</p>
+        </header>
+
+        <div class="action-buttons" style="margin-bottom: 25px; text-align: center;">
+            <button id="backBtn" class="back-button" data-translate="backToResults">返回推荐结果</button>
+        </div>
+
+        <main>
+            <section class="application-order-section">
+                <h2 data-translate="applicationOrderSectionTitle">申请截止时间排序</h2>
+                
+                <!-- 3月/9月入学切换按钮 -->
+                <div class="intake-toggle-container" style="text-align: center; margin-bottom: 20px;">
+                    <div class="intake-toggle">
+                        <button id="marchIntakeBtn" class="intake-btn active" data-intake="march">
+                            <span class="intake-label" data-translate="marchIntakeLabel">3月入学</span>
+                        </button>
+                        <button id="septemberIntakeBtn" class="intake-btn" data-intake="september">
+                            <span class="intake-label" data-translate="septemberIntakeLabel">9月入学</span>
+                        </button>
+                    </div>
+                    <p class="intake-toggle-tip" data-translate="intakeToggleTip" style="color: #7f8c8d; font-size: 0.9rem; margin-top: 8px;">
+                        点击切换查看不同入学时间的申请截止时间
+                    </p>
+                </div>
+                
+                <div id="applicationOrderContent">
+                    <!-- 申请顺序内容将在这里动态加载 -->
+                    <div style="text-align: center; padding: 50px;">
+                        <p>加载中...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p data-translate="copyright">© 2024 韩国大学推荐系统 | 数据仅供参考，请以各大学官方要求为准</p>
+        </footer>
+    </div>
+
+    <script src="js/lang.js"></script>
+    <script src="js/recommend.js"></script>
+    <script src="js/application_order.js"></script>
+</body>
+</html>

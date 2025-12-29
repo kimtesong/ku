@@ -134,7 +134,7 @@ function displaySchoolInfo(university) {
             <div class="school-contact">
                 ${university.contact.email ? `<p><strong>${trans.email}:</strong> ${university.contact.email}</p>` : ''}
                 ${university.contact.phone ? `<p><strong>${trans.phone}:</strong> ${university.contact.phone}</p>` : ''}
-                ${university.contact.website ? `<p><strong>${trans.website}:</strong> <a href="${university.contact.website}" target="_blank">${university.contact.website}</a></p>` : ''}
+                ${university.contact.website ? `<p><strong>${trans.website}:</strong> <a href="${university.contact.website}" target="_blank" onclick="event.stopPropagation()">${university.contact.website}</a></p>` : ''}
             </div>
         </div>
         ` : ''}

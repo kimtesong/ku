@@ -137,6 +137,12 @@
                 <button class="theme-btn theme-blue active" data-theme="blue" title="蓝色主题"></button>
                 <button class="theme-btn theme-purple" data-theme="purple" title="紫色主题"></button>
             </div>
+            
+            <!-- 操作按钮 -->
+            <div class="action-buttons">
+                <button id="koreanTrainingBtn" class="back-button" data-translate="koreanTrainingBtn">韩语培训</button>
+                <button id="backBtn" class="back-button" data-translate="backToSchool">返回学校介绍</button>
+            </div>
         </header>
 
         <main>
@@ -165,10 +171,6 @@
                     <p data-translate="wechatDesc">扫描二维码添加微信，了解更多入学申请信息</p>
                 </div>
             </div>
-
-            <div class="action-buttons">
-                <button id="backBtn" class="back-button" data-translate="backToSchool">返回学校介绍</button>
-            </div>
         </main>
 
         <footer>
@@ -192,6 +194,12 @@
         document.getElementById('backBtn').addEventListener('click', () => {
             // 返回上一页
             window.history.back();
+        });
+        
+        // 韩语培训按钮点击事件
+        document.getElementById('koreanTrainingBtn').addEventListener('click', () => {
+            // 跳转到韩语培训页面
+            window.location.href = 'korean_training.html';
         });
     </script>
 </body>
