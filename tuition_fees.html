@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学费信息</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 data-translate="headerTitle">学费信息</h1>
+                <button id="languageToggle" class="language-toggle" data-translate-title="languageToggleTitle" title="切换韩语">
+                    KR
+                </button>
+            </div>
+            
+            <!-- 主题切换按钮 -->
+            <div class="theme-toggle">
+                <button class="theme-btn theme-red" data-theme="red" title="红色主题"></button>
+                <button class="theme-btn theme-orange" data-theme="orange" title="橙色主题"></button>
+                <button class="theme-btn theme-yellow" data-theme="yellow" title="黄色主题"></button>
+                <button class="theme-btn theme-green" data-theme="green" title="绿色主题"></button>
+                <button class="theme-btn theme-blue active" data-theme="blue" title="蓝色主题"></button>
+                <button class="theme-btn theme-purple" data-theme="purple" title="紫色主题"></button>
+            </div>
+            <p data-translate="headerSubtitle">查看推荐大学的学费信息</p>
+        </header>
+
+        <main>
+            <div class="action-buttons">
+                <button id="backBtn" class="back-button" data-translate="backToResults">返回推荐结果</button>
+            </div>
+
+            <section class="tuition-section">
+                <h2 data-translate="tuitionSectionTitle">推荐大学学费详情</h2>
+                <div id="tuitionResults"></div>
+                <div id="noTuitionData" style="display: none;">
+                    <p data-translate="noTuitionData">暂无学费信息，请返回推荐结果页面。</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p data-translate="copyright">© 2024 韩国大学推荐系统 | 数据仅供参考，请以各大学官方要求为准</p>
+        </footer>
+    </div>
+
+    <script src="js/lang.js"></script>
+    <script src="js/recommend.js"></script>
+    <script src="js/tuition_fees.js"></script>
+</body>
+</html>
